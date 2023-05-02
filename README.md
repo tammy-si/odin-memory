@@ -1,3 +1,6 @@
+# About
+This is a My Little Pony themed memory game. It was for for the memory card project for the Odin Project.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
