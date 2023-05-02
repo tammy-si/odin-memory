@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Card from './card';
 
 function Overview(props) {
@@ -67,7 +67,6 @@ function Overview(props) {
 
 // shuffle the cards
 const shuffleCards = (e) => {
-  console.log('hi')
   let shuffledArray = [...ponies]
   let currentIndex = ponies.length;
   while (currentIndex !== 0) {
@@ -78,12 +77,17 @@ const shuffleCards = (e) => {
   setPonies(shuffledArray);
 }
 
+const handleClick = (e) => {
+  console.log(e.currentTarget.id);
+  shuffleCards();
+}
+
   // Declare a new state variable, which we'll call "count"
   return (
     <div className="cards">
       {ponies.map((pony) => {
         return (     
-          <Card key={pony.id} name={pony.name} img_url={pony.img_url} shuffle={shuffleCards}/>
+          <Card id={pony.id} name={pony.name} img_url={pony.img_url} handleClick={handleClick}/>
         )
       })}
     </div>
