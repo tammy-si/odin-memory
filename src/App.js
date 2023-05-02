@@ -10,6 +10,18 @@ function App() {
     document.title = 'Memory Card';
   }, []);
 
+  const incrementScore = () => {
+    setScore(score + 1);
+  }
+
+  const clearScore = () => {
+    setScore(0);
+  }
+
+  const setNewHighScore = () => {
+    setHighScore(score);
+  }
+
   return (
     <div className="App">
       <header>
@@ -19,7 +31,7 @@ function App() {
           <p>High Score: { highScore }</p>
         </div>
       </header>
-      <Overview />
+      <Overview score={ score } highScore = { highScore } incrementScore={incrementScore} clearScore={clearScore} setNewHighScore={setNewHighScore}/>
     </div>
   );
 }

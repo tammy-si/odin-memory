@@ -65,6 +65,8 @@ function Overview(props) {
   }
 ])
 
+const [idsClicked, setIdsClicked] = useState([])
+
 // shuffle the cards
 const shuffleCards = (e) => {
   let shuffledArray = [...ponies]
@@ -78,7 +80,21 @@ const shuffleCards = (e) => {
 }
 
 const handleClick = (e) => {
-  console.log(e.currentTarget.id);
+  // with the id clicked, we check if it has been clicked yet
+  if (idsClicked.includes(e.currentTarget.id)) {
+    // if it has been clicked already
+    // check if the current score is greater than high score, if so change high score
+    if (props.score > props.highScore) {
+      props.setNewHighScore();
+    } 
+    // reset score and idsClicked
+    props.clearScore();
+    setIdsClicked([]);
+  } else {
+    // just add the id to idsClicked and increase score by 1
+    setIdsClicked([...idsClicked, e.currentTarget.id])
+    props.incrementScore();
+  }
   shuffleCards();
 }
 
