@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/882f55dd-6be0-4cc0-91a5-25cd81611cbc/d5cvubf-a8aa4f85-1a97-4963-9748-cea65f8d5e63.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg4MmY1NWRkLTZiZTAtNGNjMC05MWE1LTI1Y2Q4MTYxMWNiY1wvZDVjdnViZi1hOGFhNGY4NS0xYTk3LTQ5NjMtOTc0OC1jZWE2NWY4ZDVlNjMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5VDXd6Sn8yL4SCfefNYWQdFMXZZmOfsF7DJwp6pxkDo");
+    background-repeat: no-repeat;
+    background-size: 100vw 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.card {
+    background-color: rgba(1, 50, 32, 0.5);
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #059669;
+    color: #022c22;
+    padding: 0 30px;
+}
