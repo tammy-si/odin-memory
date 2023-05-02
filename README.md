@@ -1,5 +1,5 @@
 # About
-This is a My Little Pony themed memory game. It was for for the memory card project for the Odin Project.
+This is a My Little Pony themed memory game. It was for for the memory card project for the Odin Project. It was made with HTML, CSS, Javascript (React).
 
 # Getting Started with Create React App
 
